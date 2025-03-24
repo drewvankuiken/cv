@@ -1,0 +1,183 @@
+%!TeX program = pdflatex
+% Drew Van Kuiken's Curriculum Vitae
+% Email: drew.van.kuiken@unc.edu
+% Web: https://drewvankuiken.github.io/
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
+\usepackage{microtype}% improve text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto}    % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+\usepackage{setspace} % custom line spacing
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+% what is your name?
+\newcommand{\myname}{Drew Van Kuiken}
+
+% select default typefaces
+\usepackage{ebgaramond} % document's serif typeface
+\usepackage{tgheros}    % document's sans serif typeface
+
+% how far to tab for list items with left-aligned date: different fonts need different widths
+\newcommand{\listtabwidth}{1.7cm}
+
+% define font to use as document's title
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*, family=\sfdefault}{30} % increase sans serif headings tracking
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+% set page margins (assumes letter paper)
+\geometry{body={6.5in, 9.0in},
+	left=1.0in,
+	top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% set line spacing
+\setstretch{0.9}
+
+% define space between list items
+\newcommand{\listitemspace}{0.25em}
+
+\definecolor{CarolinaBlue}{RGB}{75, 156, 211} % define Carolina Blue
+\sectionfont{\color{CarolinaBlue}\fontsize{12}{15}\selectfont}
+%\sectionfont{}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+			\setlength{\parskip}{0em}
+			\setlength{\itemsep}{\listitemspace}
+			\setlength{\parsep}{\listitemspace}}}
+	{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+	labelindent=0em,
+	topsep=0em,
+	partopsep=0em,
+	itemsep=\listitemspace,
+	parsep=\listitemspace,
+	font=\normalfont}
+
+% print only the month and year when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+	colorlinks  = true,
+	urlcolor    = black,
+	citecolor   = black,
+	linkcolor   = black,
+	pdfauthor   = {\myname},
+	pdfkeywords = {innovation, economics of innovation, industrial organization, IO},
+	pdftitle    = {\myname: Curriculum Vitae},
+	pdfsubject  = {Curriculum Vitae},
+	pdfpagemode = UseNone
+}
+
+\begin{document}
+	\raggedright{}
+	
+	% display your name as the document title
+	\namefont{\myname}
+	
+	% affiliation and contact info blocks
+	\vspace{1em}
+	\begin{minipage}[t]{0.700\textwidth}
+		% current primary affiliation, left-aligned
+		Department of Economics \\
+		University of North Carolina - Chapel Hill
+	\end{minipage}
+	\begin{minipage}[t]{0.295\textwidth}
+		% contact info details, right-aligned
+		\flushright{}
+		\href{mailto:drew.van.kuiken@unc.edu}{drew.van.kuiken@unc.edu} \\
+		+1 973 525 7242 \\
+		\href{https://drewvankuiken.github.io}{drewvankuiken.github.io}
+	\end{minipage}
+	
+	
+	\section*{Education}
+	
+	\begin{tablist}
+		
+		\item[Ph.D.] \tab{}Economics \\
+		University of North Carolina - Chapel Hill, 2026 (expected) \\
+		Field: Industrial Organization, Advisor: Jon Williams
+		\item[B.A.]  \tab{}Economics, Government \\
+		Bowdoin College, 2017
+		
+	\end{tablist}
+		
+	\section*{Research Interests}
+	
+	\begin{itemize}
+		
+		\item Industrial Organization, Environmental Economics, Economics of Innovation 
+		
+	\end{itemize}
+
+    \section*{Research}
+
+    \begin{itemize}
+        \item ``Should I Stay or Should I Go? An Empirical Analysis of Consumer Behavior Using Airline Web-Traffic Data'' with Alex Marsh, Garrett Scott, and Jon Williams. \textit{Conditionally accepted} at \textit{Economics of Transportation}
+        \begin{quote}
+			\textbf{Abstract}: We analyze consumer search and purchase behavior in response to airline revenue-management practices using data from a major carrier's website and Google Flights. We first describe patterns in search timing, purchase decisions, and paid fares. Then we estimate a multinomial logistic regression to identify factors driving search timing, finding that single adults with loyalty status, especially booking one-way nonstop itineraries, tend to search closer to departure. Next, we use a binary logistic model of conversions of searches to sales, showing that competitors' prices and changing customer composition explain rising conversion probabilities as departure nears. Finally, using a fixed-effects regression, we reveal how search and booking patterns affect prices paid. Late-arriving travelers, particularly single adults with loyalty status, pay substantially more, consistent with the airline's pricing strategies that segment more inelastic customers. Overall, our findings underscore how revenue-management, competitor fares, and consumer characteristics jointly shape online search and purchase behavior.
+		\end{quote}
+        \item ``Product Quality and Consolidation'' with Nate Miller, Nick Rupp, and Jon Williams
+    \end{itemize}
+
+	\section*{Teaching Experience}
+	
+	\begin{tablist}
+        \item[Professor] \tab{}ECON 370: Economic Applications of Data Science. Fall 2024.
+		\item[TA] \tab{}ECON 410: Intermediate Microeconomics. Fall 2023.
+	\end{tablist}
+
+    \section*{Conferences}
+	
+	\begin{itemize}
+        \item Southern Economic Association (2023, 2024)
+	\end{itemize}
+	
+
+	\section*{Awards}
+	
+	\begin{tablist}
+        \item[2025] \tab{}Center for Regulatory and Industry Studies, Summer Fellowship
+		\item[2024] \tab{}Center for Regulatory and Industry Studies, Summer Fellowship
+		\item[2023] \tab{}Robert E. Gallman Graduate Student Scholarship, UNC Department of Economics
+		\item[2021--26] \tab{}UNC Graduate Economics Fellowship
+	\end{tablist}
+	
+	
+	\section*{Technical Skills}
+	
+	Matlab, Python, R, Stata
+	
+	\section*{Service}
+	
+	UNC Economics Graduate Student Association Co-President (2023-2024)
+	
+	%\pagenumbering{gobble}	
+	
+\end{document}
