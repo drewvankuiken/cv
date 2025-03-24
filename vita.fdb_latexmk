@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742851448.41358 "/Users/drewvankuiken/Desktop/Research/personal_documents/cv/vita.tex" "vita.pdf" "vita" 1742851449.23567 0
-  "/Users/drewvankuiken/Desktop/Research/personal_documents/cv/vita.tex" 1742851448.14386 6827 bd78b6c3f6df9da9630d5b0a3bc8cc90 ""
+["pdflatex"] 1742852067.02606 "/Users/drewvankuiken/Desktop/Research/personal_documents/cv/vita.tex" "vita.pdf" "vita" 1742852067.80871 0
+  "/Users/drewvankuiken/Desktop/Research/personal_documents/cv/vita.tex" 1742852066.7671 6827 bd78b6c3f6df9da9630d5b0a3bc8cc90 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_ljow5q.enc" 1679344195 3064 ad039a5bf6faa075ad3278d742de72a1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_tcdnmr.enc" 1679344195 3038 e164542e716a689948526cfb8c023ec2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -111,9 +111,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1742422828 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "vita.aux" 1742851449.13401 282 01527c289ee78e3fd65e123cc2bcaf87 "pdflatex"
-  "vita.out" 1742851448.94053 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "vita.tex" 1742851448.14386 6827 bd78b6c3f6df9da9630d5b0a3bc8cc90 ""
+  "vita.aux" 1742852067.71591 282 01527c289ee78e3fd65e123cc2bcaf87 "pdflatex"
+  "vita.out" 1742852067.51963 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "vita.tex" 1742852066.7671 6827 bd78b6c3f6df9da9630d5b0a3bc8cc90 ""
   (generated)
   "vita.aux"
   "vita.log"
